@@ -95,8 +95,8 @@ body {
 .hand-left {
     position: absolute;
     
-    top: calc((190 / 1728) * 100vw);
-    left: calc((10/ 1728) * 100vw);
+    top: calc((270 / 1728) * 100vw);
+    left: calc((-105/ 1728) * 100vw);
     width: calc((965 / 1728) * 100vw);
 }
 
@@ -104,8 +104,8 @@ body {
 .hand-right {
     position: absolute;
     
-    top: calc((30 / 1728) * 100vw);
-    right: calc((-150/ 1728) * 100vw);
+    top: calc((90 / 1728) * 100vw);
+    right: calc((-200/ 1728) * 100vw);
     width: calc((1060 / 1728) * 100vw);
 }
 
