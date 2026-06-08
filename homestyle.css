@@ -176,7 +176,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: calc((40 / 1728) * 100vw);
-    margin-bottom: calc((50 / 1728) * 100vw);
+    margin-bottom: calc((60 / 1728) * 100vw);
 }
 
 .bracket {
@@ -200,6 +200,9 @@ body {
 .roulette-list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
     transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1); 
     transform: translateY(0px);
 }
@@ -210,8 +213,20 @@ body {
     font-size: calc((128 / 1728) * 100vw);
     font-weight: 700;
     color: #8DB7BD;
-    height: calc((105 / 1728) * 100vw); 
+    height: calc((105 / 1080) * 100vh);
     display: flex;
     align-items: center;
     white-space: nowrap;
+}
+
+
+.profile-description {
+    font-size: calc((15 / 1728) * 100vw);
+    font-weight: 400;
+    font-style: normal;
+    
+    line-height: 2;
+    color: #566365;
+    max-width: 677px;
+    margin: 0;
 }
