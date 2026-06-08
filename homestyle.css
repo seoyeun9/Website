@@ -56,13 +56,13 @@ body {
 .hero-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* 첫 화면은 꽉 차게 설정 */
+    height: 4036px; /* 첫 화면은 꽉 차게 설정 */
     display: flex;
     align-items: flex-end; /* 글자를 아래쪽에 배치 */
     padding: 80px; /* 좌우 하단 여백 */
 }
 
-/* 4. 배경 그래픽 레이어 세팅 */
+
 .background-graphics {
     position: absolute;
     top: 0;
@@ -73,14 +73,14 @@ body {
     pointer-events: none; /* 클릭 방해 금지 */
 }
 
-/* 대형 배경 로고 YUN */
+
 .bg-large-logo {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 55vw; /* 화면 너비의 55% 크기 (반응형) */
-    opacity: 0.8; /* 스크린샷 특유의 은은한 투명도 */
+    left: -50px;
+    top: -550px;
+    width: 860px;
 }
+
 
 .bg-large-logo img {
     width: 100%;
