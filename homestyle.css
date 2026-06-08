@@ -78,7 +78,7 @@ body {
 
 .bg-large-logo {
     position: absolute;
-    right: calc((55 / 1728) * 100vw);
+    right: calc((-55 / 1728) * 100vw);
     top: calc((555 / 1728) * 100vw);
     width: calc((865 / 1728) * 100vw);
 }
