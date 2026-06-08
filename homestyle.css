@@ -61,7 +61,7 @@ body {
     height: 4036px;
     display: flex;
     align-items: flex-end;
-    padding: 80px;
+    padding: 100px;
 }
 
 
@@ -95,15 +95,15 @@ body {
     position: absolute;
     top: 190px;
     left: 105px;
-    width: 965px;
+    width: calc((965 / 1728) * 100vw);
 }
 
 
 .hand-right {
     position: absolute;
     top: 30px;
-    right: 200vw;
-    width: 1060px;
+    right: -200px;
+    width: calc((1060 / 1728) * 100vw);
 }
 
 .hand-image img {
