@@ -128,7 +128,7 @@ body {
     font-weight: 500;
     font-style: normal;
     color: #566365;
-    margin-bottom: 60px;
+    margin-bottom: calc((60 / 1080) * 100vh);
 }
 
 .sub-description {
