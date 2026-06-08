@@ -5,13 +5,13 @@
 }
 
 body {
-    font-family: 'Noto Sans KR', sans-serif; /* 원하시는 폰트로 변경 가능 */
+    font-family: "ds-endendend", sans-serif;
     color: #333;
     background-color: #FCFFFF;
     overflow-x: hidden; /* 가로 스크롤만 방지 (세로는 아래로 쭉 내려가게) */
 }
 
-/* 2. 상단 네비게이션 바 (상단 고정) */
+
 .header {
     position: fixed;
     top: 0;
@@ -32,13 +32,18 @@ body {
 .nav-menu {
     display: flex;
     gap: 60px;
+    flex-shrink: 0;
 }
 
 .nav-item {
     text-decoration: none;
     color: #1A2223;
+    
+    font-family: "abhaya-libre", sans-serif;
+    font-weight: 700;
+    font-style: normal;    
     font-size: 20px;
-    font-weight: 500;
+    
     transition: opacity 0.3s ease;
 }
 
