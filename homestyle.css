@@ -120,11 +120,11 @@ body {
     position: absolute;
     z-index: 2;
     bottom: calc((115 / 1080) * 100vh);
+    left: calc((100 / 1728) * 100vw);
 }
 
 .main-title {    
-    font-size: calc((25 / 1728) * 100vw);
-    min-font-size: 15px;    
+    font-size: clamp(15px, calc((25 / 1728) * 100vw), 25px;   
     font-weight: 500;
     font-style: normal;
     color: #566365;
@@ -132,8 +132,7 @@ body {
 }
 
 .sub-description {
-    font-size: calc((16 / 1728) * 100vw);
-    min-font-size: 12px;
+    font-size: clamp(12px, calc((16 / 1728) * 100vw), 16px;   
     font-weight: 300;
     font-style: normal;
     line-height: 2;
