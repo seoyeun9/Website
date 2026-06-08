@@ -95,7 +95,7 @@ body {
     position: absolute;
     
     top: calc((190 / 1728) * 100vw);
-    left: calc((-105/ 1728) * 100vw);
+    left: calc((10/ 1728) * 100vw);
     width: calc((965 / 1728) * 100vw);
 }
 
@@ -104,7 +104,7 @@ body {
     position: absolute;
     
     top: calc((30 / 1728) * 100vw);
-    right: calc((-200/ 1728) * 100vw);
+    right: calc((-150/ 1728) * 100vw);
     width: calc((1060 / 1728) * 100vw);
 }
 
@@ -117,13 +117,13 @@ body {
 
 .content-box {
     position: relative;
-    z-index: 2; /* 배경 이미지들보다 위에 오도록 */
-    margin-bottom: 40px; /* 하단에서 살짝 띄우기 */
-    max-width: 600px; /* 텍스트 줄바꿈 너비 제한 */
+    z-index: 2;
+    margin-bottom: 40px;
+    max-width: 600px;
 }
 
 .main-title {
-    font-size: 2.5rem; /* 반응형 폰트 크기 크기 원하시면 3.5vw 등으로 변경 가능 */
+    font-size: 2.5rem;
     font-weight: 700;
     color: #4a5568; /* 스크린샷 톤에 맞춘 차분한 다크그레이 */
     margin-bottom: 24px;
