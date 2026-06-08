@@ -20,8 +20,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 60px; /* 피그마 여백에 맞게 조절 가능 */
-    z-index: 10; /* 최상단에 위치 */
+    padding: 60px 60px;
+    box-sizing: border-box;
+    z-index: 10;
 }
 
 .logo-top img {
