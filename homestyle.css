@@ -119,7 +119,7 @@ body {
 .content-box {
     position: relative;
     z-index: 2;
-    bottom: calc((115 / 1080) * 100vw);
+    bottom: calc((115 / 1080) * 100vh);
 }
 
 .main-title {    
