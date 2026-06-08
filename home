@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUN | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+  
+<body>
+    <header class="header">
+        <div class="logo-top">
+            <img src="images/logo.svg" alt="YUN Logo">
+        </div>
+        <nav class="nav-menu">
+            <a href="#contact" class="nav-item">Contact</a>
+            <a href="#menu" class="nav-item">Menu</a>
+        </nav>
+    </header>
+
+    <main class="hero-container">
+        
+        <div class="background-graphics">
+            <div class="bg-large-logo">
+                <img src="images/logo-large.svg" alt="YUN Large Background Logo">
+            </div>
+            
+            <div class="hand-image hand-left">
+                <img src="images/hand-left.png" alt="Left Hand Graphic">
+            </div>
+            
+            <div class="hand-image hand-right">
+                <img src="images/hand-right.png" alt="Right Hand Graphic">
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h1 class="main-title">Where brands meet people</h1>
+            <p class="sub-description">
+                From research and strategy to experience,<br>
+                I design how people encounter brands.
+            </p>
+        </div>
+
+    </main>
+
+</body>
+</html>
