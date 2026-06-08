@@ -117,13 +117,14 @@ body {
 
 
 .content-box {
-    position: relative;
+    position: absolute;
     z-index: 2;
     bottom: calc((115 / 1080) * 100vh);
 }
 
 .main-title {    
-    font-size: 1.25rem;
+    font-size: calc((25 / 1728) * 100vw);
+    min-font-size: 15px;    
     font-weight: 500;
     font-style: normal;
     color: #566365;
@@ -131,7 +132,8 @@ body {
 }
 
 .sub-description {
-    font-size: 1.1rem;
+    font-size: calc((16 / 1728) * 100vw);
+    min-font-size: 12px;
     font-weight: 300;
     font-style: normal;
     line-height: 2;
