@@ -119,21 +119,23 @@ body {
 .content-box {
     position: relative;
     z-index: 2;
-    margin-bottom: 40px;
-    max-width: 600px;
+    top: calc((844 / 1728) * 100vw);
+    right: calc((100/ 1728) * 100vw);
+    max-width: 345px;
 }
 
-.main-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #4a5568; /* 스크린샷 톤에 맞춘 차분한 다크그레이 */
-    margin-bottom: 24px;
-    letter-spacing: -0.02em;
+.main-title {    
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #566365;
+    margin-bottom: 60px;
 }
 
 .sub-description {
     font-size: 1.1rem;
-    line-height: 1.6;
-    color: #718096;
     font-weight: 300;
+    font-style: normal;
+    line-height: 2;
+    color: #566365;
 }
