@@ -78,7 +78,7 @@ body {
 
 .bg-large-logo {
     position: absolute;
-    right: calc((-55 / 1728) * 100vw);
+    right: calc((55 / 1728) * 100vw);
     top: calc((555 / 1728) * 100vw);
     width: calc((865 / 1728) * 100vw);
 }
@@ -93,8 +93,9 @@ body {
 
 .hand-left {
     position: absolute;
+    
     top: calc((190 / 1728) * 100vw);
-    left: calc((-150 / 1728) * 100vw);
+    left: clamp(150px, 10vw, -150px);
     width: calc((965 / 1728) * 100vw);
 }
 
