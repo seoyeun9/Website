@@ -155,6 +155,8 @@ body {
 
 
 .profile-content {
+    bottom: calc((100 / 1080) * 100vh);
+    
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -227,12 +229,11 @@ body {
     
     line-height: 2;
     color: #566365;
-    max-width: 677px;
+    max-width: 680px;
     margin: 0;
 
     text-align: justify;
     text-justify: inter-word;
-    word-break: break-all;
 }
 
 
