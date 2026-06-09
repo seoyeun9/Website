@@ -356,6 +356,7 @@ body {
 
 .footer-left-bg {
     flex: 1;
+    padding: 0 0 calc((-67 / 1728) * 100vw) calc((-135 / 1728) * 100vw);
 }
 
 .logo-bitmap {
