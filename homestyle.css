@@ -265,8 +265,7 @@ body {
     display: flex;
     justify-content: space-between;
     gap: calc((60 / 1728) * 100vw);
-    padding: calc((200 / 1728) * 100vw) calc((100 / 1728) * 100vw)
-    width: 100%;
+    padding: calc((250 / 1728) * 100vw) calc((100 / 1728) * 100vw)
     max-width: 1527px;
     margin: 0 auto;
 }
@@ -316,6 +315,5 @@ body {
     color: #566365;
     margin: 0;
 
-    text-align: justify;
-    text-justify: inter-word;
+    white-space: nowrap;
 }
