@@ -141,7 +141,7 @@ body {
 }
 
 
-/* 프로필 */
+
 
 .profile-container {
     width: 100%;
@@ -149,7 +149,7 @@ body {
     display: flex;
     justify-content: space-between;
     
-    padding: calc((105 / 1728) * 100vw) calc((100 / 1728) * 100vw);
+    padding: calc((200 / 1728) * 100vw) calc((100 / 1728) * 100vw);
     box-sizing: border-box;
     background-color: #FCFFFF;
     position: relative;
@@ -263,13 +263,13 @@ body {
 }
 
 
-/* 프로젝트 오버뷰 */
+
 
 .overview-container {
     display: flex;
     justify-content: space-between;
     gap: calc((60 / 1728) * 100vw);
-    padding: calc((250 / 1728) * 100vw) calc((100 / 1728) * 100vw);
+    padding: calc((400 / 1728) * 100vw) calc((100 / 1728) * 100vw);
     max-width: 1527px;
     margin: 0 auto;
 
@@ -343,7 +343,7 @@ body {
 .footer-section {
     width: 100%;
     background-color: #FCFFFF;
-    padding: calc((400 / 1728) * 100vw) 0 0 0;
+    padding: calc((200 / 1728) * 100vw) 0 0 0;
 
     overflow: hidden; 
     position: relative;
@@ -369,8 +369,8 @@ body {
 .logo-bitmap {
     position: absolute;
     
-    bottom: calc((-67 / 1728) * 100vw);
-    left: calc((-135 / 1728) * 100vw);
+    bottom: calc((-75 / 1728) * 100vw);
+    left: calc((-185 / 1728) * 100vw);
     
     width: calc((1195 / 1728) * 100vw);
     height: auto;
