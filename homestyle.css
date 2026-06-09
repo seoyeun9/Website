@@ -41,6 +41,8 @@ body {
 .nav-item {
     text-decoration: none;
     color: #1A2223;
+
+    mix-blend-mode: difference;
     
     font-family: "abhaya-libre", sans-serif;
     font-weight: 700;
