@@ -30,13 +30,11 @@ body {
     width: auto;
 }
 
-
 .nav-menu {
     display: flex;
     gap: 60px;
     flex-shrink: 0;
 }
-
 
 .nav-item {
     text-decoration: none;
@@ -55,6 +53,7 @@ body {
 .nav-item:hover {
     opacity: 0.5;
 }
+
 
 
 .hero-container {
