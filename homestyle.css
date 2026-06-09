@@ -447,16 +447,10 @@ body {
 }
 
 
-/* ==========================================
-   ✨ [신규 추가] 스르륵 떠오르는 애니메이션 정의
-========================================== */
 
-/* 1. 공통으로 사용할 '떠오르는 모션' 공식 */
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        /* 시작할 때 아래로 40px 내려가 있고, 살짝 회전이 들어간 손 이미지의 경우 
-           자연스럽게 정위치를 찾아가도록 세팅 */
         transform: translateY(40px);
     }
     to {
@@ -465,12 +459,11 @@ body {
     }
 }
 
-/* 2. 손 이미지 전용 애니메이션 공식 
-   (기존에 이미 -9도 회전이 들어가 있어서, 회전각을 유지하며 떠오르도록 따로 분리합니다) */
+
 @keyframes handFadeInUp {
     from {
         opacity: 0;
-        transform: translateY(50px) rotate(-9deg);
+        transform: translateY(100px) rotate(-9deg);
     }
     to {
         opacity: 1;
@@ -479,47 +472,42 @@ body {
 }
 
 
-/* ==========================================
-   🎯 각 파츠별 애니메이션 속도 및 시차(Delay) 적용
-========================================== */
-
-/* [1빠따] 우측 하단 거대 YUN 로고 배경 - 가장 먼저 은은하게 등장 */
 .bg-large-logo {
-    opacity: 0; /* 시작할 때 안 보이게 방어 */
+    opacity: 0;
     animation: fadeInUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-    animation-delay: 0.1s;
+    animation-delay: 0.4s;
 }
 
-/* [2빠따] 왼쪽 손, 오른쪽 손 그래픽 - 묵직하고 부드럽게 상승 */
+
 .hand-left, .hand-right {
     opacity: 0;
 }
-/* 💡 기존 .hand-image img에 들어있던 transform: rotate(-9deg)를 상위 박스 애니메이션으로 통합 제어합니다 */
+
 .hand-image img {
-    transform: none !important; /* 충돌 방지 차단 */
+    transform: none !important;
 }
 
 .hand-left {
     animation: handFadeInUp 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-    animation-delay: 0.3s; /* 로고 뜨고 0.2초 뒤 */
+    animation-delay: 0.1s;
 }
 
 .hand-right {
     animation: handFadeInUp 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-    animation-delay: 0.45s; /* 왼쪽 손 뜨고 살짝 뒤에 */
+    animation-delay: 0.25s;
 }
 
-/* [3빠따] 좌측 하단 메인 타이틀 및 본문 텍스트 조각 */
+
 .content-box {
     opacity: 0;
     animation: fadeInUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-    animation-delay: 0.7s; /* 시선이 손을 거쳐 글씨로 오도록 세팅 */
+    animation-delay: 0.7s;
 }
 
 /* [4빠따] 최상단 고정 헤더 (로고, Menu, Contact) - 마지막에 깔끔하게 등장 */
 .header {
     opacity: 0;
-    /* 헤더는 위에서 아래로 툭 떨어지며 나타나는 게 정석이라 따로 세팅합니다 */
+
     animation: headerFadeInDown 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
     animation-delay: 1s;
 }
