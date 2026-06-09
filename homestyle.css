@@ -259,3 +259,53 @@ body {
     z-index: 2;
     pointer-events: none;
 }
+
+
+.overview-container {
+    display: flex;
+    justify-content: space-between;
+    gap: calc((60 / 1728) * 100vw);
+    padding: calc((175 / 1728) * 100vw) calc((100 / 1728) * 100vw);
+    width: 100%;
+    max-width: 1527px;
+    margin: 0 auto;
+}
+
+
+.project-card {
+    flex: 1;
+    position: relative;
+    height: calc((659 / 1728) * 100vw);
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.2));
+    z-index: 1;
+    transition: transform 0.6s ease;
+}
+
+
+.card-content {
+    position: absolute;
+    top: calc((50 / 1728) * 100vw);
+    left: calc((40 / 1728) * 100vw);
+    
+    z-index: 3;
+    transition: transform 0.5s ease;
+}
+
+.card-title {
+    font-family: "abhaya-libre", sans-serif;
+    font-size: calc((64 / 1728) * 100vw);
+    font-weight: 700;
+    color: #FCFFFF;
+    margin-bottom: calc((60 / 1728) * 100vw);
+}
+
+.card-tags {
+    font-size: calc((15 / 1728) * 100vw);
+    font-weight: 300;
+    color: #566365;
+    letter-spacing: 1px;
+}
