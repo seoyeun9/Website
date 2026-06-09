@@ -229,7 +229,7 @@ body {
     
     line-height: 2;
     color: #566365;
-    max-width: calc((725 / 1728) * 100vw);
+    max-width: calc((700 / 1728) * 100vw);
     margin: 0;
 
     text-align: justify;
