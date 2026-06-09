@@ -145,7 +145,6 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     
     padding: calc((105 / 1728) * 100vw) calc((100 / 1728) * 100vw);
     box-sizing: border-box;
@@ -155,7 +154,7 @@ body {
 
 
 .profile-content {
-    bottom: calc((100 / 1080) * 100vh);
+    padding-top: calc((462 / 1728) * 100vw);
     
     flex: 1;
     display: flex;
