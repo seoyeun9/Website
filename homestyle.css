@@ -265,7 +265,7 @@ body {
     display: flex;
     justify-content: space-between;
     gap: calc((60 / 1728) * 100vw);
-    padding: calc((250 / 1728) * 100vw) calc((100 / 1728) * 100vw)
+    padding: calc((250 / 1728) * 100vw) calc((100 / 1728) * 100vw);
     max-width: 1527px;
     margin: 0 auto;
 }
