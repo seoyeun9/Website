@@ -170,7 +170,7 @@ body {
     font-weight: 700;
     font-style: normal;
     color: #1A2223;
-    margin: 0 0 calc((60 / 1728) * 100vw) 0;
+    margin-bottom: calc((30 / 1728) * 100vw);
 }
 
 
@@ -178,7 +178,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: calc((30 / 1728) * 100vw);
-    margin-bottom: calc((120 / 1728) * 100vw);
+    margin-bottom: calc((60 / 1728) * 100vw);
 }
 
 .bracket {
@@ -224,7 +224,7 @@ body {
 
 .profile-description {
     font-size: calc((15 / 1728) * 100vw);
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     
     line-height: 2;
