@@ -265,7 +265,7 @@ body {
     display: flex;
     justify-content: space-between;
     gap: calc((60 / 1728) * 100vw);
-    padding: calc((175 / 1728) * 100vw) calc((100 / 1728) * 100vw);
+    padding: calc((200 / 1728) * 100vw) calc((100 / 1728) * 100vw)
     width: 100%;
     max-width: 1527px;
     margin: 0 auto;
@@ -279,17 +279,16 @@ body {
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
+
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.2));
+    z-index: 1;
+    transition: transform 0.6s ease;
 }
 
 .card-bg {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
     background-size: cover; background-position: center;
-
-    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.2));
-    z-index: 1;
-    transition: transform 0.6s ease;
-
 }
 
 .card-content {
@@ -299,6 +298,8 @@ body {
     
     z-index: 3;
     transition: transform 0.5s ease;
+
+    max-width: calc((384 / 1728) * 100vw);
 }
 
 .card-title {
@@ -306,12 +307,15 @@ body {
     font-size: calc((64 / 1728) * 100vw);
     font-weight: 700;
     color: #FCFFFF;
-    margin-bottom: calc((60 / 1728) * 100vw);
+    margin: 0 0 calc((60 / 1728) * 100vw) 0;
 }
 
 .card-tags {
     font-size: calc((15 / 1728) * 100vw);
     font-weight: 300;
     color: #566365;
-    letter-spacing: 1px;
+    margin: 0;
+
+    text-align: justify;
+    text-justify: inter-word;
 }
