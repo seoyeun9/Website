@@ -359,6 +359,8 @@ body {
 }
 
 .logo-bitmap {
+    bottom: calc((-67 / 1728) * 100vw);
+    left: calc((-135 / 1728) * 100vw);
     width: calc((1195 / 1728) * 100vw);
     height: auto;
     display: block;
