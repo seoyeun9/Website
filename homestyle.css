@@ -334,4 +334,6 @@ body {
 .overview-container .project-card:hover {
     opacity: 1;
     filter: grayscale(0);
+    
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.2));
 }
