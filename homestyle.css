@@ -248,9 +248,9 @@ body {
 
 
 .profile-img {
-    position: absolute;
-    top: calc((52 / 1728) * 100vw);
-    left: calc((85 / 1728) * 100vw);
+    position: relative;
+    top: calc((158 / 1728) * 100vw);
+    left: calc((185 / 1728) * 100vw);
     width: calc((530 / 1728) * 100vw);
     height: auto;
     display: block;
