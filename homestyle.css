@@ -376,3 +376,52 @@ body {
     height: auto;
     display: block;
 }
+
+
+
+
+.footer-right-content {
+    display: flex;
+    flex-direction: column;
+    gap: calc((60 / 1728) * 100vw); 
+}
+
+
+.info-group {
+    display: flex;
+    flex-direction: column;
+    gap: calc((30 / 1728) * 100vw);
+}
+
+.info-label {
+    font-family: "abhaya-libre", sans-serif;
+    font-size: calc((24 / 1728) * 100vw);
+    font-weight: 400;
+    color: #566365;
+}
+
+
+.info-value {
+    font-size: calc((18 / 1728) * 100vw);
+    font-weight: 400;
+    color: #1A2223;
+}
+
+
+
+.info-link.email-link {
+    font-size: calc((18 / 1728) * 100vw);
+    font-weight: 400;
+    color: #1A2223;
+    text-decoration: none;
+    width: max-content;
+    
+    border-bottom: 1px solid rgba(26, 34, 35, 1.0);
+    padding-bottom: 2px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.info-link.email-link:hover {
+    color: #566365;
+    border-bottom: 1px solid rgba(86, 99, 101, 0.4);
+}
