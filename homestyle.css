@@ -522,3 +522,77 @@ body {
         transform: translateY(0);
     }
 }
+
+
+
+
+
+
+.scroll-fade, .bg-large-logo, .hand-left, .hand-right, .content-box, .profile-shadow, .profile-img, .project-card {
+    opacity: 0;
+    
+    /* 0.8초 동안 팝업되듯 탄력 있고 쫀득하게 감속하는 최고급 타이밍 공식 (cubic-bezier) */
+    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), 
+                transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+                
+    /* 브라우저가 버벅이지 않고 부드럽게 렌더링하도록 힌트를 주는 최적화 속성 */
+    will-change: transform, opacity; 
+}
+
+/* ==========================================
+   ✨ 화면 내에 진입했을 때의 공통 노출 공식
+========================================== */
+.is-visible {
+    /* 화면 정중앙에 가까워질수록 선명(1)해지고, 위아래 천장/바닥으로 갈수록 투명(0)해지는 수학 공식 */
+    opacity: calc(1.4 - (var(--scroll-progress) * var(--scroll-progress) * 5));
+}
+
+
+/* ==========================================
+   🛸 13개 파츠별 개성 넘치는 시차(Parallax) 무빙 디자인
+========================================== */
+
+/* --- 1. 히어로 섹션 파츠 (4개) --- */
+.content-box {
+    /* 좌하단 메인 글씨 묶음: 스크롤 따라 가장 다이내믹하게 밀려 올라감 */
+    transform: translateY(calc(var(--scroll-progress, 0) * 180px));
+}
+.hand-left {
+    /* 왼쪽 손: 중간 속도로 스르륵 */
+    transform: translateY(calc(var(--scroll-progress, 0) * 120px));
+}
+.hand-right {
+    /* 오른쪽 손: 회전각(-9deg)을 유지하면서 살짝 묵직하게 이동 */
+    transform: translateY(calc(var(--scroll-progress, 0) * 80px));
+}
+.bg-large-logo {
+    /* 우하단 거대 YUN 로고: 제자리 근처에서 아주 은은하게만 무빙 */
+    transform: translateY(calc(var(--scroll-progress, 0) * 40px));
+}
+
+
+/* --- 2. 프로필 섹션 파츠 (6개) --- */
+.profile-title { /* "Hi, I design" */
+    transform: translateY(calc(var(--scroll-progress, 0) * 160px));
+}
+.roulette-wrapper { /* "{ Brand }" 룰렛 구역 */
+    transform: translateY(calc(var(--scroll-progress, 0) * 130px));
+}
+.profile-description { /* 프로필 하단 본문 설명글 */
+    transform: translateY(calc(var(--scroll-progress, 0) * 100px));
+}
+.profile-img {
+    /* 앞쪽 프로필 실물 사진: 묵직하고 뚜렷하게 무빙 */
+    transform: translateY(calc(var(--scroll-progress, 0) * 140px));
+}
+.profile-shadow {
+    /* 💡 뒤쪽 블루 실루엣 배경: 실물보다 '더 느리게' 밀리게 하여 공간의 깊이감(입체감)을 줍니다! */
+    transform: translateY(calc(var(--scroll-progress, 0) * 70px));
+}
+
+
+/* --- 3. 프로젝트 카드 섹션 파츠 (3개) --- */
+.project-card {
+    /* 카드 3형제: 스크롤 내릴 때 밑에서 위로 부드럽게 솟구치며 등장 */
+    transform: translateY(calc(var(--scroll-progress, 0) * 150px));
+}
