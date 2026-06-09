@@ -323,12 +323,12 @@ body {
 }
 
 
-.project-card:hover {
+.project-card:hover card-bg {
     opacity: 0.4;
     filter: grayscale(0.2);
 }
 
-.card-bg:hover {
+.project-card:hover card-bg:hover {
     opacity: 1;
     filter: grayscale(0);
 }
