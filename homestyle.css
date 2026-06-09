@@ -237,9 +237,9 @@ body {
 
 
 .profile-shadow {
-    position: relative;
+    position: absolute;
     top: calc((105 / 1728) * 100vw);
-    left: calc((100 / 1728) * 100vw);
+    right: calc((100 / 1728) * 100vw);
     width: calc((560 / 1728) * 100vw);
     height: auto;
     z-index: 1;
@@ -248,9 +248,9 @@ body {
 
 
 .profile-img {
-    position: relative;
+    position: absolute;
     top: calc((158 / 1728) * 100vw);
-    left: calc((185 / 1728) * 100vw);
+    right: calc((185 / 1728) * 100vw);
     width: calc((530 / 1728) * 100vw);
     height: auto;
     display: block;
