@@ -427,3 +427,22 @@ body {
     color: #566365;
     border-bottom: 1px solid rgba(86, 99, 101, 0.4);
 }
+
+
+.social-links-group {
+    display: flex;
+    gap: calc((60 / 1728) * 100vw);
+}
+
+
+.social-icon-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.social-icon-img {
+    width: calc((45 / 1728) * 100vw);
+    height: auto;
+}
