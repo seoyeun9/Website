@@ -229,4 +229,31 @@ body {
     color: #566365;
     max-width: 677px;
     margin: 0;
+
+    text-align: justify;
+    text-justify: inter-word;
+    word-break: break-all;
+}
+
+
+.profile-shadow {
+    position: absolute;
+    top: calc((105 / 1728) * 100vw);
+    left: calc((100 / 1728) * 100vw);
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.profile-img {
+    position: relative;
+    top: calc((52 / 1728) * 100vw);
+    left: calc((85 / 1728) * 100vw);
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 2;
+    pointer-events: none;
 }
