@@ -344,6 +344,9 @@ body {
     width: 100%;
     background-color: #FCFFFF;
     padding: calc((400 / 1728) * 100vw) 0 0 0;
+
+    overflow: hidden; 
+    position: relative;
 }
 
 .footer-container {
@@ -351,17 +354,24 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
+    
     box-sizing: border-box;
+    padding: 0 calc((100 / 1728) * 100vw);
+    position: relative;
 }
 
 .footer-left-bg {
     flex: 1;
-    padding: 0 0 calc((-67 / 1728) * 100vw) calc((-135 / 1728) * 100vw);
+    position: relative;
+    height: calc((514 / 1728) * 100vw);
 }
 
 .logo-bitmap {
+    position: absolute;
+    
     bottom: calc((-67 / 1728) * 100vw);
     left: calc((-135 / 1728) * 100vw);
+    
     width: calc((1195 / 1728) * 100vw);
     height: auto;
     display: block;
