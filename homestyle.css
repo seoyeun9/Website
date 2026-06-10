@@ -540,7 +540,7 @@ body {
 }
 
 
-.scroll-fade, .profile-shadow, .profile-img, .project-card brand, .project-card visual, .project-card digital {
+.scroll-fade, .profile-shadow, .profile-img, .project-card {
     opacity: 0;
     
     transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), 
@@ -553,9 +553,7 @@ body {
 .scroll-fade.is-visible,
 .profile-shadow.is-visible,
 .profile-img.is-visible,
-.project-card brand.is-visible,
-.project-card visual.is-visible,
-.project-card digital.is-visible {
+.project-card.is-visible {
     opacity: calc(1 - (var(--scroll-progress) * (var(--scroll-progress) * 2)));
 }
 
@@ -592,12 +590,6 @@ body {
 }
 
 
-.project-card brand {
-    transform: translateY(calc(var(--scroll-progress, 0) * 150px));
-}
-.project-card visual {
-    transform: translateY(calc(var(--scroll-progress, 0) * 150px));
-}
-.project-card digital {
+.project-card {
     transform: translateY(calc(var(--scroll-progress, 0) * 150px));
 }
