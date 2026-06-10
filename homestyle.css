@@ -150,17 +150,17 @@ body {
     display: flex;
     justify-content: space-between;
     
-    padding: calc((200 / 1728) * 100vw) calc((100 / 1728) * 100vw);
+    padding: calc((105 / 1728) * 100vw) calc((100 / 1728) * 100vw);
     box-sizing: border-box;
     background-color: #FCFFFF;
     position: relative;
-
+    
     user-select: none;
 }
 
 
 .profile-content {
-    padding-top: calc((462 / 1728) * 100vw);
+    padding-top: calc((460 / 1080) * 100vh) 0 0 0;
     
     flex: 1;
     display: flex;
