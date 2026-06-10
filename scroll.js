@@ -58,51 +58,51 @@ document.addEventListener("DOMContentLoaded", () => {
 
     
     const rouletteList = document.querySelector('.roulette-list');
-    const rouletteItems = document.querySelectorAll('.roulette-item');
+    const originalItems = document.querySelectorAll('.roulette-item');
     
-    if (rouletteList && rouletteItems.length > 0) {
-        const totalItems = rouletteItems.length;
+    if (rouletteList && originalItems.length > 0) {
+        const itemHeight = originalItems[0].offsetHeight;
+        const totalOriginal = originalItems.length;
+
         
+        const firstClone = originalItems[0].cloneNode(true);
+        const lastClone = originalItems[totalOriginal - 1].cloneNode(true);
+        
+        rouletteList.appendChild(firstClone);
+        rouletteList.insertBefore(lastClone, originalItems[0]);
+
+        
+        let currentRealIndex = 0; 
         rouletteList.style.transition = 'none';
+        rouletteList.style.transform = `translateY(${-itemHeight}px)`;
 
-        let currentIndex = 0;
 
-        const spinJackpot = () => {
-            const targetIndex = (currentIndex + 1) % totalItems;
-            currentIndex = targetIndex;
+        let isSpinning = false;
 
-            const itemHeight = rouletteItems[0].offsetHeight;
+        const startInfiniteSpin = () => {
+            if (isSpinning) return;
+            isSpinning = true;
+
+
+            currentRealIndex = (currentRealIndex + 1) % totalOriginal;
+
+            rouletteList.style.transition = 'transform 2.5s cubic-bezier(0.15, 0.85, 0.35, 1)';
             
-            const startY = parseFloat(rouletteList.style.transform.replace(/[^0-9.-]/g, '')) || 0;
+            const targetVirtualIndex = currentRealIndex + totalOriginal;
+            rouletteList.style.transform = `translateY(${-(targetVirtualIndex + 1) * itemHeight}px)`;
 
-            const targetY = -(targetIndex * itemHeight) - (totalItems * itemHeight * 4);
 
-            let currentY = startY;
-            let speed = 30; // 회전 속도
-            const friction = 0.95; // 브레이크 감속 비율 (0.95~0.98 사이. 1에 가까울수록 천천히 멈춤)
-            const minSpeed = 0.5; // 최소 속도 제한
-
-            const animate = () => {
-                speed *= friction;
-
-                currentY -= speed;
-
-                if (currentY <= targetY || speed < minSpeed) {
-                    const finalY = -(targetIndex * itemHeight);
-                    rouletteList.style.transform = `translateY(${finalY}px)`;
-                    
-                    setTimeout(spinJackpot, 2500);
-                    return;
-                }
-
-                rouletteList.style.transform = `translateY(${currentY}px)`;
+            setTimeout(() => {
+                rouletteList.style.transition = 'none';
+                rouletteList.style.transform = `translateY(${-(currentRealIndex + 1) * itemHeight}px)`;
                 
-                requestAnimationFrame(animate);
-            };
-
-            requestAnimationFrame(animate);
+                isSpinning = false;
+                
+                setTimeout(startInfiniteSpin, 2500);
+            }, 2500); // transition 시간과 일치시킴
         };
 
-        setTimeout(spinJackpot, 1500);
+        // 페이지 켜지고 1.5초 뒤 첫 가동
+        setTimeout(startInfiniteSpin, 1500);
     }
 });
