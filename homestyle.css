@@ -64,7 +64,9 @@ body {
     display: flex;
     align-items: flex-end;
     box-sizing: border-box;
+    
     padding: 100px;
+    margin: 0 0 200px 0;
 
     user-select: none;
 }
@@ -101,6 +103,7 @@ body {
     top: calc((270 / 1728) * 100vw);
     left: calc((-105/ 1728) * 100vw);
     width: calc((965 / 1728) * 100vw);
+    max-width: 1447.5px;
 }
 
 
@@ -110,6 +113,7 @@ body {
     top: calc((90 / 1728) * 100vw);
     right: calc((-200/ 1728) * 100vw);
     width: calc((1060 / 1728) * 100vw);
+    max-width: 1590px;
 }
 
 .hand-image img {
@@ -152,8 +156,10 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
-    padding: 100px;
     box-sizing: border-box;
+    
+    padding: 100px;
+    margin: 0 0 200px 0;
     
     user-select: none;
 }
@@ -551,32 +557,19 @@ body {
 
 
 .content-box {
-    transform: translateY(calc(var(--scroll-progress, 0) * 180px));
-}
-.scrolled .content-box {
-    opacity: calc(1.0 + (var(--scroll-progress, 0) * 2.5));
+    transform: translateY(calc(var(--scroll-progress, 0) * 300px));
 }
 
 .hand-left {
-    transform: translateY(calc(var(--scroll-progress, 0) * 220px));
-}
-.scrolled .hand-left {
-    opacity: calc(1.0 + (var(--scroll-progress, 0) * 3));
+    transform: translateY(calc(var(--scroll-progress, 0) * 400px));
 }
 
 .hand-right {
-    transform: translateY(calc(var(--scroll-progress, 0) * 200px));
-}
-
-.scrolled .hand-right {
-    opacity: calc(1.0 + (var(--scroll-progress, 0) * 3));
+    transform: translateY(calc(var(--scroll-progress, 0) * 350px));
 }
 
 .bg-large-logo {
-    transform: translateY(calc(var(--scroll-progress, 0) * 180px));
-}
-.scrolled .bg-large-logo{
-    opacity: calc(1.0 + (var(--scroll-progress, 0) * 2));
+    transform: translateY(calc(var(--scroll-progress, 0) * 250px));
 }
 
 
