@@ -520,6 +520,7 @@ body {
     will-change: transform, opacity;
 }
 
+
 .header {
     opacity: 0;
 
@@ -537,7 +538,6 @@ body {
         transform: translateY(0);
     }
 }
-
 
 
 .scroll-fade, .profile-shadow, .profile-img, .project-card {
@@ -562,41 +562,40 @@ body {
 .content-box {
     transform: translateY(calc(var(--scroll-progress, 0) * 300px));
 }
-
 .hand-left {
     transform: translateY(calc(var(--scroll-progress, 0) * 200px));
 }
-
 .hand-right {
     transform: translateY(calc(var(--scroll-progress, 0) * 150px));
 }
-
 .bg-large-logo {
     transform: translateY(calc(var(--scroll-progress, 0) * 250px));
 }
+    
 
-
-.profile-title { /* "Hi, I design" */
+.profile-title {
     transform: translateY(calc(var(--scroll-progress, 0) * 150px));
 }
-.roulette-wrapper { /* 룰렛 구역 */
+.roulette-wrapper {
     transform: translateY(calc(var(--scroll-progress, 0) * 150px));
 }
-.profile-description { /* 프로필 하단 본문 설명글 */
+.profile-description {
     transform: translateY(calc(var(--scroll-progress, 0) * 100px));
 }
 .profile-img {
-    /* 앞쪽 프로필 실물 사진: 묵직하고 뚜렷하게 무빙 */
     transform: translateY(calc(var(--scroll-progress, 0) * 140px));
 }
 .profile-shadow {
-    /* 💡 뒤쪽 블루 실루엣 배경: 실물보다 '더 느리게' 밀리게 하여 공간의 깊이감(입체감)을 줍니다! */
     transform: translateY(calc(var(--scroll-progress, 0) * 70px));
 }
 
 
-/* --- 3. 프로젝트 카드 섹션 파츠 (3개) --- */
-.project-card {
-    /* 카드 3형제: 스크롤 내릴 때 밑에서 위로 부드럽게 솟구치며 등장 */
+.project-card brand {
+    transform: translateY(calc(var(--scroll-progress, 0) * 150px));
+}
+.project-card visual {
+    transform: translateY(calc(var(--scroll-progress, 0) * 150px));
+}
+.project-card digital {
     transform: translateY(calc(var(--scroll-progress, 0) * 150px));
 }
