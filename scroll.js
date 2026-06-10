@@ -56,55 +56,21 @@ document.addEventListener("DOMContentLoaded", () => {
         updateScrollProgress();
     });
 
-    
+
     const rouletteList = document.querySelector('.roulette-list');
-    const originalItems = document.querySelectorAll('.roulette-item');
+    const rouletteItems = document.querySelectorAll('.roulette-item');
     
-    if (rouletteList && originalItems.length > 0) {
-        const itemHeight = originalItems[0].offsetHeight;
-        const totalOriginal = originalItems.length;
+    if (rouletteList && rouletteItems.length > 0) {
+        let currentIndex = 0;
+        const totalItems = rouletteItems.length;
 
-        
-        const repeatCount = 5;
-        for (let i = 0; i < repeatCount - 1; i++) {
-            originalItems.forEach(item => {
-                const clone = item.cloneNode(true);
-                rouletteList.appendChild(clone);
-            });
-        }
-
-        
-        let currentRealIndex = 0; 
-        rouletteList.style.transition = 'none';
-        rouletteList.style.transform = `translateY(${-itemHeight}px)`;
-
-
-        let isSpinning = false;
-
-        const startInfiniteSpin = () => {
-            if (isSpinning) return;
-            isSpinning = true;
-
-
-            currentRealIndex = (currentRealIndex + 1) % totalOriginal;
-
-            const targetVirtualIndex = currentRealIndex + (totalOriginal * 3);
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalItems;
             
-            rouletteList.style.transition = 'transform 2.5s cubic-bezier(0.15, 0.85, 0.35, 1)';
-            rouletteList.style.transform = `translateY(${-(targetVirtualIndex + 1) * itemHeight}px)`;
-
-
-            setTimeout(() => {
-                rouletteList.style.transition = 'none';
-                rouletteList.style.transform = `translateY(${-(currentRealIndex + 1) * itemHeight}px)`;
-                
-                isSpinning = false;
-                
-                setTimeout(startInfiniteSpin, 2500);
-            }, 2500); // transition 시간과 일치시킴
-        };
-
-        // 1.5초 뒤 첫 가동
-        setTimeout(startInfiniteSpin, 1500);
+            const itemHeight = rouletteItems[0].offsetHeight;
+            const moveY = -(currentIndex * itemHeight);
+            
+            rouletteList.style.transform = `translateY(${moveY}px)`;
+        }, 1500);
     }
 });
