@@ -85,7 +85,7 @@ body {
 .bg-large-logo {
     position: absolute;
     right: calc((-55 / 1728) * 100vw);
-    top: calc((555 / 1080) * 100vh);
+    bottom: calc((100 / 1080) * 100vh);
     width: calc((865 / 1728) * 100vw);
 }
 
@@ -126,24 +126,27 @@ body {
 .content-box {
     position: absolute;
     z-index: 2;
-    bottom: calc((115 / 1080) * 100vh);
+    bottom: calc((150 / 1080) * 100vh);
     left: calc((100 / 1728) * 100vw);
 }
 
 .main-title {    
-    font-size: clamp(15px, calc((25 / 1728) * 100vw), 25px);   
+    font-size: calc((25 / 1728) * 100vw);   
     font-weight: 500;
     font-style: normal;
     color: #566365;
-    margin-bottom: calc((60 / 1080) * 100vh);
+    
+    margin: 0 0 calc((30 / 1080) * 100vh) 0;
 }
 
 .sub-description {
-    font-size: clamp(12px, calc((16 / 1728) * 100vw), 16px);   
-    font-weight: 300;
+    font-size: calc((16 / 1728) * 100vw);   
+    font-weight: 100;
     font-style: normal;
     line-height: 2;
     color: #566365;
+    
+    margin: 0;
 }
 
 
