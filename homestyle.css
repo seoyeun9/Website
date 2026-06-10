@@ -212,7 +212,7 @@ body {
 
 .roulette-window {
     display: inline-block;
-    height: calc((120 / 1080) * 100vh); 
+    height: calc((130 / 1080) * 100vh); 
     overflow: hidden;
     position: relative;
     min-width: calc((555 / 1728) * 100vw); 
@@ -235,7 +235,7 @@ body {
     font-size: calc((128 / 1728) * 100vw);
     font-weight: 700;
     color: #8DB7BD;
-    height: calc((120 / 1080) * 100vh);
+    height: calc((140 / 1080) * 100vh);
     display: flex;
     align-items: center;
     white-space: nowrap;
