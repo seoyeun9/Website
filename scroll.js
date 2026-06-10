@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             const startY = parseFloat(rouletteList.style.transform.replace(/[^0-9.-]/g, '')) || 0;
 
-            const targetY = -(targetIndex * itemHeight) - (totalItems * itemHeight * 2);
+            const targetY = -(targetIndex * itemHeight) - (totalItems * itemHeight * 4);
 
             let currentY = startY;
             let speed = 30; // 회전 속도
