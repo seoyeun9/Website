@@ -564,11 +564,11 @@ body {
 }
 
 .hand-left {
-    transform: translateY(calc(var(--scroll-progress, 0) * 400px));
+    transform: translateY(calc(var(--scroll-progress, 0) * 200px));
 }
 
 .hand-right {
-    transform: translateY(calc(var(--scroll-progress, 0) * 350px));
+    transform: translateY(calc(var(--scroll-progress, 0) * 150px));
 }
 
 .bg-large-logo {
