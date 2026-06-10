@@ -58,6 +58,7 @@ body {
 
 .hero-container {
     position: relative;
+    
     width: 100%;
     height: 100vh;
     display: flex;
@@ -145,23 +146,25 @@ body {
 
 
 .profile-container {
+    position: relative;
+    
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
-    
-    padding: calc((105 / 1728) * 100vw) calc((100 / 1728) * 100vw);
+    padding: 100px;
     box-sizing: border-box;
-    background-color: #FCFFFF;
-    position: relative;
     
     user-select: none;
 }
 
 
 .profile-content {
-    padding-top: calc((460 / 1080) * 100vh) 0 0 0;
+    position: absolute;
     
+    bottom: calc((200 / 1728) * 100vw);
+    left: calc((100 / 1728) * 100vw);
+
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -174,8 +177,10 @@ body {
     font-size: calc((64 / 1728) * 100vw);
     font-weight: 700;
     font-style: normal;
+    line-height: 0.9;
+    
     color: #1A2223;
-    margin-bottom: calc((30 / 1728) * 100vw);
+    margin-bottom: calc((15 / 1728) * 100vw);
 }
 
 
@@ -183,13 +188,15 @@ body {
     display: inline-flex;
     align-items: center;
     gap: calc((30 / 1728) * 100vw);
-    margin-bottom: calc((60 / 1728) * 100vw);
+    margin-bottom: calc((30 / 1728) * 100vw);
 }
 
 .bracket {
     font-family: "abhaya-libre", sans-serif;
     font-size: calc((128 / 1728) * 100vw);
     font-weight: 700;
+    line-height: 0;
+    
     color: #1A2223;
 }
 
@@ -243,9 +250,12 @@ body {
 
 .profile-shadow {
     position: absolute;
-    top: calc((200 / 1728) * 100vw);
+    
+    bottom: calc((70 / 1728) * 100vw);
     right: calc((100 / 1728) * 100vw);
     width: calc((560 / 1728) * 100vw);
+    max-width: 560px;
+    
     height: auto;
     z-index: 1;
     pointer-events: none;
@@ -254,9 +264,12 @@ body {
 
 .profile-img {
     position: absolute;
-    top: calc((255 / 1728) * 100vw);
+    
+    bottom: calc((85 / 1728) * 100vw);
     right: calc((185 / 1728) * 100vw);
     width: calc((530 / 1728) * 100vw);
+    max-width: 530px;
+    
     height: auto;
     display: block;
     z-index: 2;
@@ -532,7 +545,7 @@ body {
 .profile-shadow.is-visible,
 .profile-img.is-visible,
 .project-card.is-visible {
-    opacity: calc(1.4 - (var(--scroll-progress) * var(--scroll-progress) * 5));
+    opacity: calc(1 - (var(--scroll-progress) * (var(--scroll-progress) * 2)));
 }
 
 
@@ -568,10 +581,10 @@ body {
 
 
 .profile-title { /* "Hi, I design" */
-    transform: translateY(calc(var(--scroll-progress, 0) * 160px));
+    transform: translateY(calc(var(--scroll-progress, 0) * 150px));
 }
 .roulette-wrapper { /* 룰렛 구역 */
-    transform: translateY(calc(var(--scroll-progress, 0) * 130px));
+    transform: translateY(calc(var(--scroll-progress, 0) * 150px));
 }
 .profile-description { /* 프로필 하단 본문 설명글 */
     transform: translateY(calc(var(--scroll-progress, 0) * 100px));
