@@ -523,12 +523,6 @@ body {
     will-change: transform, opacity; 
 }
 
-.bg-large-logo, .hand-left, .hand-right, .content-box {
-    transition: opacity 0.4s ease,
-                transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-    
-    will-change: transform, opacity;
-}
 
 .scroll-fade.is-visible,
 .profile-shadow.is-visible,
