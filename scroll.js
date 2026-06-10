@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const scrollElements = document.querySelectorAll('.scroll-fade, .bg-large-logo, .hand-left, .hand-right, .content-box, .profile-shadow, .profile-img, .project-card');
+    const scrollElements = document.querySelectorAll('.scroll-fade, .profile-shadow, .profile-img, .project-card');
 
     const observerOptions = {
         root: null,
