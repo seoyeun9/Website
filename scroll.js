@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
     
-    updateScrollProgess();
+    updateScrollProgress();
     
     window.addEventListener('scroll', updateScrollProgress);
 });
