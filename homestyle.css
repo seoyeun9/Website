@@ -292,9 +292,9 @@ body {
     display: flex;
     justify-content: space-between;
     gap: calc((60 / 1728) * 100vw);
-    padding: calc((400 / 1728) * 100vw) calc((100 / 1728) * 100vw);
+    padding: 100px;
     max-width: 1527px;
-    margin: 0 auto;
+    margin: 0 0 200px 0;
 
     pointer-events: none;
 }
