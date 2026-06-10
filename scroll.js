@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const scrollElements = document.querySelectorAll('.scroll-fade, .profile-shadow, .profile-img, .project-card');
+    const observerElements = document.querySelectorAll('.scroll-fade, .profile-shadow, .profile-img, .project-card');
+    const allScrollElements = document.querySelectorAll('.scroll-fade, .profile-shadow, .profile-img, .project-card, .bg-large-logo, .hand-left, .hand-right, .content-box');
 
     const observerOptions = {
         root: null,
@@ -21,16 +22,30 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }, observerOptions);
 
-    scrollElements.forEach(el => scrollObserver.observe(el));
+    observerElements.forEach(el => scrollObserver.observe(el));
 
-    window.addEventListener('scroll', () => {
-        scrollElements.forEach(el => {
+    const updateScrollProgress = () => {
+        allScrollElements.forEach(el => {
             const box = el.getBoundingClientRect();
             const viewHeight = window.innerHeight;
-            if (box.top < viewHeight && box.bottom > 0) {
+
+            if (
+                el.classList.contains('content-box') || 
+                el.classList.contains('hand-left') || 
+                el.classList.contains('hand-right') || 
+                el.classList.contains('bg-large-logo')
+            ) {
+                const currentProgress = (box.top + box.height / 2) / viewHeight - 0.5;
+                el.style.setProperty('--scroll-progress', currentProgress);
+            } 
+            else if (box.top < viewHeight && box.bottom > 0) {
                 const currentProgress = (box.top + box.height / 2) / viewHeight - 0.5;
                 el.style.setProperty('--scroll-progress', currentProgress);
             }
         });
-    });
+    };
+    
+    updateScrollProgess();
+    
+    window.addEventListener('scroll', updateScrollProgress);
 });
