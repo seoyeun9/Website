@@ -534,18 +534,30 @@ body {
 
 .content-box {
     transform: translateY(calc(var(--scroll-progress, 0) * 180px));
+}
+.scrolled .content-box {
     opacity: calc(1.0 + (var(--scroll-progress, 0) * 2.5));
 }
+
 .hand-left {
     transform: translateY(calc(var(--scroll-progress, 0) * 220px));
+}
+.scrolled .hand-left {
     opacity: calc(1.0 + (var(--scroll-progress, 0) * 3));
 }
+
 .hand-right {
     transform: translateY(calc(var(--scroll-progress, 0) * 200px));
+}
+
+.scrolled .hand-right {
     opacity: calc(1.0 + (var(--scroll-progress, 0) * 3));
 }
+
 .bg-large-logo {
     transform: translateY(calc(var(--scroll-progress, 0) * 180px));
+}
+.scrolled .bg-large-logo{
     opacity: calc(1.0 + (var(--scroll-progress, 0) * 2));
 }
 
