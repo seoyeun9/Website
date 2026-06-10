@@ -65,11 +65,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const totalOriginal = originalItems.length;
 
         
-        const firstClone = originalItems[0].cloneNode(true);
-        const lastClone = originalItems[totalOriginal - 1].cloneNode(true);
-        
-        rouletteList.appendChild(firstClone);
-        rouletteList.insertBefore(lastClone, originalItems[0]);
+        const repeatCount = 5;
+        for (let i = 0; i < repeatCount - 1; i++) {
+            originalItems.forEach(item => {
+                const clone = item.cloneNode(true);
+                rouletteList.appendChild(clone);
+            });
+        }
 
         
         let currentRealIndex = 0; 
@@ -86,9 +88,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             currentRealIndex = (currentRealIndex + 1) % totalOriginal;
 
-            rouletteList.style.transition = 'transform 2.5s cubic-bezier(0.15, 0.85, 0.35, 1)';
+            const targetVirtualIndex = currentRealIndex + (totalOriginal * 3);
             
-            const targetVirtualIndex = currentRealIndex + totalOriginal;
+            rouletteList.style.transition = 'transform 2.5s cubic-bezier(0.15, 0.85, 0.35, 1)';
             rouletteList.style.transform = `translateY(${-(targetVirtualIndex + 1) * itemHeight}px)`;
 
 
