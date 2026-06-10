@@ -71,6 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const moveY = -(currentIndex * itemHeight);
             
             rouletteList.style.transform = `translateY(${moveY}px)`;
-        }, 2500);
+        }, 1500);
     }
 });
