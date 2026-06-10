@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 2500); // transition 시간과 일치시킴
         };
 
-        // 페이지 켜지고 1.5초 뒤 첫 가동
+        // 1.5초 뒤 첫 가동
         setTimeout(startInfiniteSpin, 1500);
     }
 });
