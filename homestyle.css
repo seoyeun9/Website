@@ -514,9 +514,6 @@ body {
 
 
 
-
-
-
 .scroll-fade, .profile-shadow, .profile-img, .project-card {
     opacity: 0;
     
@@ -540,26 +537,19 @@ body {
     opacity: calc(1.4 - (var(--scroll-progress) * var(--scroll-progress) * 5));
 }
 
-.bg-large-logo.is-visible,
-.hand-left.is-visible,
-.hand-right.is-visible,
-.content-box.is-visible {
-    opacity: calc(1.0 + (var(--scroll-progress) * 2));
-}
 
 
-
-.content-box.is-visible {
-    transform: translateY(calc(var(--scroll-progress, 0) * 180px));
-}
-.hand-left.is-visible {
-    transform: translateY(calc(var(--scroll-progress, 0) * 120px));
-}
-.hand-right.is-visible {
+.content-box {
     transform: translateY(calc(var(--scroll-progress, 0) * 80px));
 }
-.bg-large-logo.is-visible {
-    transform: translateY(calc(var(--scroll-progress, 0) * 40px));
+.hand-left {
+    transform: translateY(calc(var(--scroll-progress, 0) * 180px));
+}
+.hand-right {
+    transform: translateY(calc(var(--scroll-progress, 0) * 160px));
+}
+.bg-large-logo {
+    transform: translateY(calc(var(--scroll-progress, 0) * 80px));
 }
 
 
