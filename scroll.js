@@ -61,16 +61,48 @@ document.addEventListener("DOMContentLoaded", () => {
     const rouletteItems = document.querySelectorAll('.roulette-item');
     
     if (rouletteList && rouletteItems.length > 0) {
-        let currentIndex = 0;
         const totalItems = rouletteItems.length;
+        
+        rouletteList.style.transition = 'none';
 
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % totalItems;
-            
+        let currentIndex = 0;
+
+        const spinJackpot = () => {
+            const targetIndex = (currentIndex + 1) % totalItems;
+            currentIndex = targetIndex;
+
             const itemHeight = rouletteItems[0].offsetHeight;
-            const moveY = -(currentIndex * itemHeight);
             
-            rouletteList.style.transform = `translateY(${moveY}px)`;
-        }, 1500);
+            const startY = parseFloat(rouletteList.style.transform.replace(/[^0-9.-]/g, '')) || 0;
+
+            const targetY = -(targetIndex * itemHeight) - (totalItems * itemHeight * 2);
+
+            let currentY = startY;
+            let speed = 100; // 회전 속도
+            const friction = 0.96; // 브레이크 감속 비율 (0.95~0.98 사이. 1에 가까울수록 천천히 멈춤)
+            const minSpeed = 0.5; // 최소 속도 제한
+
+            const animate = () => {
+                speed *= friction;
+
+                currentY -= speed;
+
+                if (currentY <= targetY || speed < minSpeed) {
+                    const finalY = -(targetIndex * itemHeight);
+                    rouletteList.style.transform = `translateY(${finalY}px)`;
+                    
+                    setTimeout(spinJackpot, 2500);
+                    return;
+                }
+
+                rouletteList.style.transform = `translateY(${currentY}px)`;
+                
+                requestAnimationFrame(animate);
+            };
+
+            requestAnimationFrame(animate);
+        };
+
+        setTimeout(spinJackpot, 1500);
     }
 });
