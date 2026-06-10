@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             let currentY = startY;
             let speed = 60; // 회전 속도
-            const friction = 0.96; // 브레이크 감속 비율 (0.95~0.98 사이. 1에 가까울수록 천천히 멈춤)
+            const friction = 0.95; // 브레이크 감속 비율 (0.95~0.98 사이. 1에 가까울수록 천천히 멈춤)
             const minSpeed = 0.5; // 최소 속도 제한
 
             const animate = () => {
