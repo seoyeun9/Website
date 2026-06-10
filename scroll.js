@@ -55,4 +55,22 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         updateScrollProgress();
     });
+
+    
+    const rouletteList = document.querySelector('.roulette-list');
+    const rouletteItems = document.querySelectorAll('.roulette-item');
+    
+    if (rouletteList && rouletteItems.length > 0) {
+        let currentIndex = 0;
+        const totalItems = rouletteItems.length;
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalItems;
+            
+            const itemHeight = rouletteItems[0].offsetHeight;
+            const moveY = -(currentIndex * itemHeight);
+            
+            rouletteList.style.transform = `translateY(${moveY}px)`;
+        }, 2500);
+    }
 });
