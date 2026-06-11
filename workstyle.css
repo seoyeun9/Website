@@ -112,7 +112,7 @@ body {
     user-select: none;
 }
 
-.title {
+.title-img {
     position: absolute;
     
     bottom: calc((200 / 1728) * 100vw);
