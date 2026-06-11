@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const observerElements = document.querySelectorAll('.scroll-fade, .profile-shadow, .profile-img, .project-card');
-    const allScrollElements = document.querySelectorAll('.scroll-fade, .profile-shadow, .profile-img, .project-card, .bg-large-logo, .hand-left, .hand-right, .content-box');
+    const observerElements = document.querySelectorAll('.scroll-fade, .profile-shadow, .profile-img, .project-card-brand, .project-card-visual, .project-card-digital');
+    const allScrollElements = document.querySelectorAll('.scroll-fade, .profile-shadow, .profile-img, .project-card-brand, .project-card-visual, .project-card-digital, .bg-large-logo, .hand-left, .hand-right, .content-box');
 
     const observerOptions = {
         root: null,
