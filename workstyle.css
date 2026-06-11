@@ -104,22 +104,19 @@ body {
     position: relative;
     
     width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-between;
+    display: inline-block;
     box-sizing: border-box;
     
     padding: 200px;
     margin: 0;
-    
     user-select: none;
 }
 
-.work {
+.title {
     position: absolute;
     
     bottom: calc((200 / 1728) * 100vw);
-    left: calc((160 / 1728) * 100vw);
+    right: calc((160 / 1728) * 100vw);
     width: calc((295 / 1728) * 100vw);
     max-width: 295px;
     
@@ -128,11 +125,11 @@ body {
     pointer-events: none;
 }
 
-.work_blue {
+.title-shadow {
     position: absolute;
     
     bottom: calc((215 / 1728) * 100vw);
-    left: calc((100 / 1728) * 100vw);
+    right: calc((100 / 1728) * 100vw);
     width: calc((345 / 1728) * 100vw);
     max-width: 345;
     
