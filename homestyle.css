@@ -32,6 +32,7 @@ body {
 }
 
 .logo-top img {
+    display: block;
     height: 35px;
     width: auto;
 }
