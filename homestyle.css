@@ -25,6 +25,12 @@ body {
     z-index: 10;
 }
 
+.logo-top a {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
 .logo-top img {
     height: 35px;
     width: auto;
