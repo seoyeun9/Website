@@ -600,13 +600,13 @@ body {
 
 
 .project-card-brand {
-    transform: translateY(calc(var(--scroll-progress, 0) * 150px));
+    transform: translateY(calc(var(--scroll-progress, 0) * 20px));
 }
 
 .project-card-visual {
-    transform: translateY(calc(var(--scroll-progress, 0) * 200px));
+    transform: translateY(calc(var(--scroll-progress, 0) * 40px));
 }
 
 .project-card-digital {
-    transform: translateY(calc(var(--scroll-progress, 0) * 250px));
+    transform: translateY(calc(var(--scroll-progress, 0) * 60px));
 }
