@@ -487,6 +487,23 @@ body {
                     pointer-events: none;
                 }
 
+                .content-tags {
+                    position: absolute;
+                    bottom: calc((25 / 1728) * 100vw);
+                    left: 30px;
+                    z-index: 2;
+                    
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: row;
+                    
+                    gap: calc((15 / 1728) * 100vw);
+                    max-width: 360px;
+
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+        
                 .wide-content:hover .wide-content-media::after {
                     opacity: 1;
                 }
