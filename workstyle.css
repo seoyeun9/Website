@@ -452,6 +452,7 @@ body {
             /* 히어로 섹션*/
                 .visual-hero {
                     position: relative;
+                    height: calc((450 / 1728) * 100vw);
                     
                     display: flex;
                     flex-direction: row;
@@ -474,7 +475,7 @@ body {
                 }
 
                 #visual-hero-text {
-                    margin: 0 130px 0 0;
+                    margin: 0 200px 0 0;
                 }
 
         /* 디지털 섹션*/
