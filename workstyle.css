@@ -228,6 +228,7 @@ body {
         /* 브랜드 섹션*/
             .brand-section {
                 height: auto;
+                margin: 0 0 400px 0;
             }
 
             /* 히어로 섹션*/
@@ -325,7 +326,6 @@ body {
                     flex-direction: column;
 
                     gap: calc((80 / 1728) * 100vw);
-                    margin: 0 0 400px 0;
                 }
 
                 .content-row {
@@ -446,6 +446,7 @@ body {
         /* 비쥬얼 섹션*/
             .visual-section {
                 height: auto;
+                margin: 0 0 200px 0;
             }
 
             /* 히어로 섹션*/
@@ -466,6 +467,7 @@ body {
         /* 디지털 섹션*/
             .digital-section {
                 height: auto;
+                margin: 200px 0 100px 0;
             }
 
             /* 히어로 섹션*/
