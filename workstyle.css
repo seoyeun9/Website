@@ -323,6 +323,8 @@ body {
                 .content-row-panel {
                     display: flex;
                     flex-direction: column;
+
+                    gap: calc((80 / 1728) * 100vw);
                 }
 
                 .content-row {
