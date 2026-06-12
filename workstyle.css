@@ -243,12 +243,24 @@ body {
 .brand-hero {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    align-items: center;
 
     gap: 60px;
 }
 
+.hero-media {
+    width: calc((790 / 1728) * 100vw);
+    height: auto;
+}
+
+.info-top-row {
+    display: flex;
+    flex-direction: row;
+}
+
 .hero-title {
+    margin: 0;
+    
     font-family: "abhaya-libre", sans-serif;
     font-size: calc((40 / 1728) * 100vw);
     font-weight: 700;
