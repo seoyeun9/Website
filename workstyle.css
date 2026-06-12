@@ -215,7 +215,7 @@ body {
 }
 
 
-.brand-section {
+.work-card-containter {
     position: absolute;
     top: 0px;
     right: calc((100 / 1728) * 100vw);
@@ -229,6 +229,12 @@ body {
     user-select: none;
 }
 
+
+.brand-hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
 
 
 
