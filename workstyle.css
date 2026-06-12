@@ -159,9 +159,7 @@ body {
     
     /* 좌측 카테고리 */
         .category-sidebar {
-            position: absolute;
-            box-sizing: border-box;
-            
+            box-sizing: border-box;            
             user-select: none;  
         }
         
@@ -229,83 +227,95 @@ body {
             margin: 0 0 80px 0;
         }
         
-    /* 브랜드 섹션*/
-    .brand-section {
-            height: auto;
-        }
-        
-        .brand-hero {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        
-            gap: 60px;
-        }
-        
-        .huddle-video {
-            width: calc((790 / 1728) * 100vw);
-            height: auto;
-        }
-        
-        .info-top-row {
-            display: flex;
-            flex-direction: row;
-        
-            margin: 0 0 300px 0;
-        }
-        
-        .hero-title {
-            margin: 0;
-            
-            font-family: "abhaya-libre", sans-serif;
-            font-size: calc((40 / 1728) * 100vw);
-            font-weight: 700;
-            font-style: normal;
-            line-height: 0.9;
-            
-            color: #1A2223;
-        }
-        
-        .hero-description {
-            font-size: calc((14 / 1728) * 100vw);
-            font-weight: 300;
-            font-style: normal;
-            
-            line-height: 2;
-            color: #566365;
-            max-width: calc((341 / 1728) * 100vw);
-            margin: 30px 0 0 60px;
-        
-            text-align: justify;
-            text-justify: inter-word;
-        }
+        /* 브랜드 섹션*/
+            .brand-section {
+                    height: auto;
+                }
+                
+                .brand-hero {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                
+                    gap: 100px;
+                }
 
-        .hero-tags {
-            display: flex;
-            gap: calc((20 / 1728) * 100vw);
-            flex-wrap: wrap;
-        }
+                .hero-media {
+                    width: calc((790 / 1728) * 100vw);
+                    max-width: 790px;
+                }
 
-        .hero-tags .tag-item {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            
-            text-decoration: none;
-            
-            font-size: calc((14 / 1728) * 100vw);
-            font-weight: 400;
-            font-style: normal;
-            color: #AAB9BB;
+                .huddle-video {
+                    width: 100%;
+                    display: block;
+                }
+                
+                .info-top-row {
+                    display: flex;
+                    flex-direction: column;
+                
+                    margin: 0 0 250px 0;
+                }
 
-            border: 1px solid: #AAB9BB;
-            
-            padding: calc((10 / 1728) * 100vw) calc((20 / 1728) * 100vw);
-            border-radius: 20px;
+                .hero-info {
+                    flex: 1;
 
-            background-color: transparent; /* 배경은 투명하게 */
-            white-space: nowrap;
-        }
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .hero-title {
+                    margin: 0;
+                    
+                    font-family: "abhaya-libre", sans-serif;
+                    font-size: calc((40 / 1728) * 100vw);
+                    font-weight: 700;
+                    font-style: normal;
+                    line-height: 0.9;
+                    
+                    color: #1A2223;
+                }
+                
+                .hero-description {
+                    font-size: calc((14 / 1728) * 100vw);
+                    font-weight: 300;
+                    font-style: normal;
+                    
+                    line-height: 2;
+                    color: #566365;
+                    max-width: calc((341 / 1728) * 100vw);
+                    margin: 30px 0 0 0;
+                
+                    text-align: justify;
+                    text-justify: inter-word;
+                }
+        
+                .hero-tags {
+                    display: flex;
+                    gap: calc((20 / 1728) * 100vw);
+                    flex-wrap: wrap;
+                }
+        
+                .hero-tags .tag-item {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    text-decoration: none;
+                    
+                    font-size: calc((11 / 1728) * 100vw);
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #AAB9BB;
+        
+                    border: 1.5px solid #AAB9BB;
+                    
+                    padding: calc((10 / 1728) * 100vw) calc((20 / 1728) * 100vw);
+                    border-radius: 20px;
+        
+                    background-color: transparent; /* 배경은 투명하게 */
+                    white-space: nowrap;
+                }
 
 
 
