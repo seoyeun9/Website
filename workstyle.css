@@ -106,15 +106,15 @@ body {
         display: inline-block;
         box-sizing: border-box;
         
-        padding: 200px;
-        margin: 200px 0 0 0;
+        padding: calc((100 / 1728) * 100vw);
+        margin: 100px 0 0 0;
         user-select: none;
     }
     
     .title-img {
         position: absolute;
         
-        bottom: calc((200 / 1728) * 100vw);
+        bottom: calc((15 / 1728) * 100vw);
         right: calc((160 / 1728) * 100vw);
         width: calc((295 / 1728) * 100vw);
         max-width: 295px;
@@ -127,7 +127,7 @@ body {
     .title-shadow {
         position: absolute;
         
-        bottom: calc((215 / 1728) * 100vw);
+        bottom: calc((30 / 1728) * 100vw);
         right: calc((100 / 1728) * 100vw);
         width: calc((345 / 1728) * 100vw);
         max-width: 345;
@@ -257,7 +257,7 @@ body {
                 }
 
                 .hero-info {
-                    width: calc((355 / 1728) * 100vw);
+                    width: calc((360 / 1728) * 100vw);
 
                     display: flex;
                     flex-direction: column;
@@ -290,7 +290,7 @@ body {
         
                 .hero-tags {
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: flex-start;
                     flex-direction: row;
                     
                     gap: calc((15 / 1728) * 100vw);
@@ -339,7 +339,7 @@ body {
                     position: relative;
                     
                     width: calc((400 / 1728) * 100vw);
-                    margin: 0 0 45px 0;
+                    margin: 0 0 25px 0;
                 }
 
                .content-img {
@@ -368,7 +368,7 @@ body {
                     display: flex;
                     flex-direction: column;
 
-                    margin: 0 0 20px 0;
+                    margin: 0;
                 }
 
                 .content-title {
@@ -390,7 +390,7 @@ body {
                     
                     line-height: 2;
                     color: #566365;
-                    margin: 30px 0 0 0;
+                    margin: 15px 0 0 0;
                 
                     text-align: justify;
                     text-justify: inter-word;
@@ -463,6 +463,13 @@ body {
                     display: block;
                 }
 
+            /* wide-content 공통 섹션*/                
+                .wide-content-media {
+                    position: relative;
+                    
+                    width: calc((641 / 1728) * 100vw);
+                    margin: 0 0 25px 0;
+                }
 
 .footer-section {
     width: 100%;
