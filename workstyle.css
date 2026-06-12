@@ -463,6 +463,30 @@ body {
                     display: block;
                 }
 
+        /* 디지털 섹션*/
+            .digital-section {
+                height: auto;
+            }
+
+            /* 히어로 섹션*/
+                .digital-hero {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                
+                    gap: calc((100 / 1728) * 100vw);
+                    margin: 0 0 100px 0;
+                }
+
+                .hero-media {
+                    width: calc((790 / 1728) * 100vw);
+                }
+
+                .rhiza-img {
+                    width: 100%;
+                    display: block;
+                }
+
             /* wide-content 공통 섹션*/                
                 .wide-content-media {
                     position: relative;
