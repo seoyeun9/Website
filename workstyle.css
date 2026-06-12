@@ -145,7 +145,7 @@ body {
     .work-container {
         position: relative;
         display: flex;
-        gap: calc((45 / 1728) * 100vw);
+        gap: calc((100 / 1728) * 100vw);
         
         width: 100%;
         min-height: 100vh;
@@ -237,12 +237,11 @@ body {
                     flex-direction: row;
                     align-items: center;
                 
-                    gap: 100px;
+                    gap: calc((100 / 1728) * 100vw);
                 }
 
                 .hero-media {
                     width: calc((790 / 1728) * 100vw);
-                    max-width: 790px;
                 }
 
                 .huddle-video {
@@ -254,11 +253,11 @@ body {
                     display: flex;
                     flex-direction: column;
                 
-                    margin: 0 0 250px 0;
+                    margin: 0 0 300px 0;
                 }
 
                 .hero-info {
-                    flex: 1;
+                    width: 360px;
 
                     display: flex;
                     flex-direction: column;
@@ -283,7 +282,6 @@ body {
                     
                     line-height: 2;
                     color: #566365;
-                    max-width: calc((341 / 1728) * 100vw);
                     margin: 30px 0 0 0;
                 
                     text-align: justify;
@@ -292,8 +290,11 @@ body {
         
                 .hero-tags {
                     display: flex;
-                    gap: calc((20 / 1728) * 100vw);
-                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    flex-direction: row;
+                    
+                    gap: calc((15 / 1728) * 100vw);
+                    max-width: 360px;
                 }
         
                 .hero-tags .tag-item {
@@ -310,7 +311,7 @@ body {
         
                     border: 1.5px solid #AAB9BB;
                     
-                    padding: calc((10 / 1728) * 100vw) calc((20 / 1728) * 100vw);
+                    padding: calc((5 / 1728) * 100vw) calc((20 / 1728) * 100vw);
                     border-radius: 20px;
         
                     background-color: transparent; /* 배경은 투명하게 */
