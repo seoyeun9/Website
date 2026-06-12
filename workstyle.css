@@ -237,7 +237,7 @@ body {
                     align-items: center;
                 
                     gap: calc((100 / 1728) * 100vw);
-                    margin: 0 0 140px 0;
+                    margin: 0 0 100px 0;
                 }
 
                 .hero-media {
@@ -455,7 +455,7 @@ body {
                     align-items: center;
                 
                     gap: calc((100 / 1728) * 100vw);
-                    margin: 0 0 140px 0;
+                    margin: 0 0 100px 0;
                 }
 
                 .lg-img {
@@ -470,6 +470,8 @@ body {
                     width: calc((641 / 1728) * 100vw);
                     margin: 0 0 25px 0;
                 }
+
+            /* wide-content 공통 섹션*/
 
 .footer-section {
     width: 100%;
