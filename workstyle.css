@@ -140,6 +140,7 @@ body {
 }
 
 
+
 .work-container {
     position: relative;
     display: flex;
@@ -171,6 +172,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin: 0;
 }
 
 .category-item a {
@@ -208,10 +210,25 @@ body {
     text-align: right;
 }
 
-
 .category-item.active a {
     opacity: 1;
 }
+
+
+.brand-section {
+    position: absolute;
+    top: 0px;
+    right: calc((100 / 1728) * 100vw);
+    
+    width: calc((1362 / 1728) * 100vw);
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    
+    user-select: none;
+}
+
 
 
 
