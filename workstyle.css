@@ -18,7 +18,7 @@ body {
 }
 
 
-
+/* 헤더 */
 .header {
     position: fixed;
     top: 0;
@@ -100,6 +100,7 @@ body {
 }
 
 
+/* 타이틀 */
 .title-container {
     position: relative;
     
@@ -140,7 +141,7 @@ body {
 }
 
 
-
+/* 하단 메인 화면 */
 .work-container {
     position: relative;
     display: flex;
@@ -155,6 +156,7 @@ body {
     overflow: none;
 }
 
+/* 좌측 카테고리 */
 .category-sidebar {
     position: absolute;
     top: 0px;
@@ -215,27 +217,60 @@ body {
 }
 
 
+/* 우측 작업물 갤러리 */
 .work-card-container {
     position: absolute;
     top: 0px;
     right: calc((100 / 1728) * 100vw);
     
     width: calc((1362 / 1728) * 100vw);
+    max-width: 1362px;
+    height: auto;
     box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
     
     user-select: none;
+    margin: 0 0 80px 0;
 }
 
+/* 브랜드 섹션*/
+.brand-section {
+    height: auto;
+}
 
 .brand-hero {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+
+    gap: 60px;
 }
 
+.hero-title {
+    font-family: "abhaya-libre", sans-serif;
+    font-size: calc((40 / 1728) * 100vw);
+    font-weight: 700;
+    font-style: normal;
+    line-height: 0.9;
+    
+    color: #1A2223;
+}
+
+.hero-description {
+    font-size: calc((15 / 1728) * 100vw);
+    font-weight: 300;
+    font-style: normal;
+    
+    line-height: 2;
+    color: #566365;
+    max-width: calc((341 / 1728) * 100vw);
+    margin: 0;
+
+    text-align: justify;
+    text-justify: inter-word;
+}
 
 
 .footer-section {
