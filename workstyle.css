@@ -229,15 +229,17 @@ body {
         
         /* 브랜드 섹션*/
             .brand-section {
-                    height: auto;
-                }
-                
+                height: auto;
+            }
+
+            /* 히어로 섹션*/
                 .brand-hero {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                 
                     gap: calc((100 / 1728) * 100vw);
+                    margin: 0 0 80px 0;
                 }
 
                 .hero-media {
@@ -318,6 +320,78 @@ body {
                     white-space: nowrap;
                 }
 
+
+            /* content1 row 섹션*/
+                .content-media {
+                    width: calc((400 / 1728) * 100vw);
+                }
+
+                .content-img {
+                    width: 100%;
+                    display: block;
+                }                
+                
+                .content-info {
+                    width: 350px;
+
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .content-title {
+                    margin: 0;
+                    
+                    font-family: "abhaya-libre", sans-serif;
+                    font-size: calc((40 / 1728) * 100vw);
+                    font-weight: 700;
+                    font-style: normal;
+                    line-height: 0.9;
+                    
+                    color: #1A2223;
+                }
+                
+                .content-description {
+                    font-size: calc((14 / 1728) * 100vw);
+                    font-weight: 300;
+                    font-style: normal;
+                    
+                    line-height: 2;
+                    color: #566365;
+                    margin: 30px 0 0 0;
+                
+                    text-align: justify;
+                    text-justify: inter-word;
+                }
+        
+                .content-tags {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: row;
+                    
+                    gap: calc((15 / 1728) * 100vw);
+                    max-width: 360px;
+                }
+        
+                .content-tags .tag-item {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    text-decoration: none;
+                    
+                    font-size: calc((11 / 1728) * 100vw);
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #AAB9BB;
+        
+                    border: 1.5px solid #AAB9BB;
+                    
+                    padding: calc((5 / 1728) * 100vw) calc((20 / 1728) * 100vw);
+                    border-radius: 20px;
+        
+                    background-color: transparent;
+                    white-space: nowrap;
+                }
 
 
 .footer-section {
