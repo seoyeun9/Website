@@ -215,7 +215,7 @@ body {
 }
 
 
-.work-card-containter {
+.work-card-container {
     position: absolute;
     top: 0px;
     right: calc((100 / 1728) * 100vw);
