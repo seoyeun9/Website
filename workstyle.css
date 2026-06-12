@@ -257,7 +257,7 @@ body {
                 }
 
                 .hero-info {
-                    width: 360px;
+                    width: calc((355 / 1728) * 100vw);
 
                     display: flex;
                     flex-direction: column;
@@ -362,7 +362,7 @@ body {
                 }               
 
                 .content-info {
-                    width: 350px;
+                    width: calc((325 / 1728) * 100vw);
 
                     display: flex;
                     flex-direction: column;
