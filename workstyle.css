@@ -248,7 +248,7 @@ body {
     gap: 60px;
 }
 
-.hero-media {
+.huddle-video {
     width: calc((790 / 1728) * 100vw);
     height: auto;
 }
