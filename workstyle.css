@@ -322,12 +322,12 @@ body {
 
 
             /* content 공통 섹션*/
-                .contant-row-panel {
+                .content-row-panel {
                     display: flex;
                     flex-direction: column;
                 }
 
-                .contant-row {
+                .content-row {
                     display: flex;
                     flex-direction: row;
 
