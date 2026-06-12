@@ -237,7 +237,7 @@ body {
                     align-items: center;
                 
                     gap: calc((100 / 1728) * 100vw);
-                    margin: 0 0 50px 0;
+                    margin: 0 0 80px 0;
                 }
 
                 .hero-media {
@@ -253,7 +253,7 @@ body {
                     display: flex;
                     flex-direction: column;
                 
-                    margin: 0 0 300px 0;
+                    margin: 0 0 200px 0;
                 }
 
                 .hero-info {
@@ -396,8 +396,7 @@ body {
                 .content-tags {
                     position: absolute;
                     bottom: calc((25 / 1728) * 100vw);
-                    left: 50%;
-                    transform: translateX(-50%);
+                    left: 30px;
                     z-index: 2;
                     
                     display: flex;
