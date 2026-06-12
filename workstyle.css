@@ -487,10 +487,13 @@ body {
                     pointer-events: none;
                 }
 
-                .content:hover .wide-content-media::after {
+                .wide-content:hover .wide-content-media::after {
                     opacity: 1;
                 }
 
+                .wide-content:hover .content-tags {
+                    opacity: 1;
+                }
 
 .footer-section {
     width: 100%;
