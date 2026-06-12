@@ -474,10 +474,6 @@ body {
                     width: calc((790 / 1728) * 100vw);
                 }
 
-                #visual-hero-text {
-                    margin: 0 200px 0 0;
-                }
-
         /* 디지털 섹션*/
             .digital-section {
                 height: auto;
