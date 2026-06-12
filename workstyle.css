@@ -159,7 +159,7 @@ body {
     top: 0px;
     left: calc((100 / 1728) * 100vw);
     
-    width: calc((119 / 1728) * 100vw);
+    width: calc((145 / 1728) * 100vw);
     box-sizing: border-box;
     
     user-select: none;  
