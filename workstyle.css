@@ -172,6 +172,13 @@ body {
 }
 
 .category-item a {
+    text-decoration: none;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    
     font-family: "abhaya-libre", sans-serif;
     font-size: calc((24 / 1728) * 100vw);
     font-weight: 700;
@@ -182,6 +189,23 @@ body {
     opacity: 0.4; 
     transition: all 0.3s ease;
 }
+
+.category-item .category-text {
+    grid-column: 2;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.category-item .bracket-left {
+    grid-column: 1;
+    text-align: left;
+}
+
+.category-item .bracket-right {
+    grid-column: 3;
+    text-align: right;
+}
+
 
 .category-item.active a {
     opacity: 1;
