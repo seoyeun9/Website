@@ -321,7 +321,19 @@ body {
                 }
 
 
-            /* content1 row 섹션*/
+            /* content 공통 섹션*/
+                .contant-row-panel {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .contant-row {
+                    display: flex;
+                    flex-direction: row;
+
+                    gap: calc((50 / 1728) * 100vw);
+                }
+                
                 .content-media {
                     width: calc((400 / 1728) * 100vw);
                 }
