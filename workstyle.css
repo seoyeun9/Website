@@ -450,10 +450,7 @@ body {
             }
 
             /* 히어로 섹션*/
-                .visual-hero {
-                    position: relative;
-                    height: calc((450 / 1728) * 100vw);
-                    
+                .visual-hero {                    
                     display: flex;
                     flex-direction: row;
                     align-items: center;
@@ -465,13 +462,6 @@ body {
                 .lg-img {
                     width: 100%;
                     display: block;
-                }
-
-                #visual-hero-img {
-                    position: absolute;
-                    top: 0;
-                    right: calc((100 / 1728) * 100vw);
-                    width: calc((790 / 1728) * 100vw);
                 }
 
         /* 디지털 섹션*/
